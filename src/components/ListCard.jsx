@@ -9,7 +9,7 @@ const ListCard = ({ refacciones }) => {
             // console.log("ITEM", item);
             return (
               <>
-                <Card key={item.id} item={item} refacciones={refacciones} />
+                <Card key={item.id} item={item} />
               </>
             );
           })}

@@ -1,4 +1,4 @@
-const Card = ({ item, refacciones }) => {
+const Card = ({ item }) => {
   const { id, imagen, nombreRefaccion, precioCliente, precioProvedor, stock } =
     item;
   {
