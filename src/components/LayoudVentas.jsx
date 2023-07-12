@@ -1,9 +1,12 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 const LayoudVentas = () => {
+  const navigate = useNavigate();
+
   return (
     <div className=" md:flex md:min-h-screen">
       <aside className="bg-orange-600 md:w-1/4 px-5 pv-10">
+        <button onClick={() => navigate("/")}>Atras</button>
         <nav className="text-white text-xl text-center ">
           <Link
             className={`mt-10 block ${

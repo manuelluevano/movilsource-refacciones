@@ -90,35 +90,7 @@ const Formulario = ({
     setFolio("");
     setStatus(false);
     setModeloMarca("");
-    // setPendienteObj([...pendienteObj, objetoPendiente]);
-
-    //REVISAR SI VAMOS A EDITAR O AGREGAR
-
-    // if (pendienteEdit.id) {
-    //   //EDITANDO EL REGISTRO
-    //   console.log("Editando", pendienteEdit.id);
-
-    //   //agregar id del obj a editar al objeto
-    //   objetoPendiente.id = pendienteEdit.id;
-    //   const pendienteActualizado = pendienteObj.map((pendienteState) =>
-    //     pendienteState.id === pendienteEdit.id
-    //       ? objetoPendiente
-    //       : pendienteState
-    //   );
-
-    //   console.log("OBJETO EDITADO", pendienteActualizado);
-    //   setPendienteObj(pendienteActualizado);
-
-    //   setPendienteEdit({});
-    // } else {
-    //   //AGREGANDO EL REGISTRO
-    //   console.log("Agregando");
-    //   // objetoPendiente.id = generarId();
-    //   setPendienteObj([...pendienteObj, objetoPendiente]);
-    // }
   };
-
-  // console.log("Dolar", MxDolar["rates"]["MXN"]);
 
   return (
     <>

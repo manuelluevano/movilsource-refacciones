@@ -1,12 +1,22 @@
+export function loader() {
+  const display = [
+    {
+      name: "Honor",
+      price: 100,
+    },
+    {
+      name: "samsung",
+      price: 200,
+    },
+  ];
+  return display;
+}
+
 import { API, graphqlOperation } from "aws-amplify";
 import ListCard from "../components/ListCard";
 import { listRefacciones } from "../graphql/queries";
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-
-export function loader() {
-  return "Desde loader";
-}
 
 const Refacciones = () => {
   const datos = useLoaderData();
@@ -22,7 +32,7 @@ const Refacciones = () => {
 
       setRefacciones(data.listRefacciones.items);
 
-      console.log(data.listRefacciones.items);
+      // console.log(data.listRefacciones.items);
       // setReload(false);
     })();
   }, []);

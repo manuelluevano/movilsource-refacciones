@@ -2,7 +2,7 @@ const Card = ({ item }) => {
   const { id, imagen, nombreRefaccion, precioCliente, precioProvedor, stock } =
     item;
   {
-    console.log("Item:", item);
+    // console.log("Item:", item);
 
     return (
       <>
